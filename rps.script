@@ -1,0 +1,5 @@
+function getComputerChoice() {
+    let RPS = ["rock", "paper", "scissors"];
+    let compChoice = RPS[Math.floor(Math.random() * 3)];
+    return compChoice;
+}
