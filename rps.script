@@ -5,3 +5,13 @@ function getComputerChoice() {
     let computerSelection = choices[Math.floor(Math.random() * 3)];
     return computerSelection;
 }
+
+// prompt user to make a selction of rock/paper/scissor and record as new variable. input must only be one of those three choices and case insensitive
+
+function playerSelection() {
+    let playerChoice = prompt("Enter rock, paper, or scissors!").toLowerCase();
+    if (playerChoice === "") {
+        return playerSelection();
+    } else return playerChoice;
+}
+// at this point, i'm unsure how to limit the user's input to one of the three choices. i'm going to come back to this...
