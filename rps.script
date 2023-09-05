@@ -8,10 +8,10 @@ function getComputerChoice() {
 
 // prompt user to make a selction of rock/paper/scissor and record as new variable. input must only be one of those three choices and case insensitive
 
-function playerSelection() {
+function getPlayerSelection() {
     let playerChoice = prompt("Enter rock, paper, or scissors!").toLowerCase();
     if (playerChoice === "") {
-        return playerSelection();
+        return getPlayerSelection();
     } else return playerChoice;
 }
 // at this point, i'm unsure how to limit the user's input to one of the three choices. i'm going to come back to this...
