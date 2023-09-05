@@ -15,6 +15,12 @@ function playRound() {
 
     if (playerChoice === "") {
         return playRound();
-    } 
+    } else if (playerChoice === "rock" && computerChoice === "rock") {
+        return ("Tie!")
+    } else if (playerChoice === "rock" && computerChoice === "paper") {
+        return ("You loose - paper beats rock.")
+    } else if (playerChoice === "rock" && computerChoice === "scissors") {
+        return ("You win - rock beats scissors!")
+    }
 }
 
