@@ -46,3 +46,19 @@ function playRound() {
 
 let playerScore = 0;
 let compScore = 0;
+
+function game() {
+    console.log(playRound());
+    console.log(playRound());
+    console.log(playRound());
+    console.log(playRound());
+    console.log(playRound());
+
+if (playerScore > compScore) {
+    return ("You beat the computer!");
+} else if (playerScore < compScore) {
+    return ("You lost to the computer!");
+} else if (playerScore === compScore) {
+    return ("Draw!");
+}
+}
