@@ -37,7 +37,9 @@ function playRound() {
         ++ playerScore
         return ("You win - scissors beats paper!") 
     } else if (playerChoice === "scissors" && computerChoice === "scissors") {
-        return ("Tie!");
+        return ("Tie!"); 
+    } else if (playerChoice != ["rock", "paper", "scissors"]) {
+        alert("You need to enter rock, paper or scissors");
     }
 }
 
