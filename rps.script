@@ -18,9 +18,15 @@ function playRound() {
     } else if (playerChoice === "rock" && computerChoice === "rock") {
         return ("Tie!")
     } else if (playerChoice === "rock" && computerChoice === "paper") {
+        ++ compScore
         return ("You loose - paper beats rock.")
     } else if (playerChoice === "rock" && computerChoice === "scissors") {
+        ++ playerScore
         return ("You win - rock beats scissors!")
     }
 }
 
+// start player score and computer score at 0. score will increment each by one when a round has been played, as shown in function playRound
+
+let playerScore = 0;
+let compScore = 0;
