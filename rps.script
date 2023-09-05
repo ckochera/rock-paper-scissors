@@ -23,6 +23,14 @@ function playRound() {
     } else if (playerChoice === "rock" && computerChoice === "scissors") {
         ++ playerScore
         return ("You win - rock beats scissors!")
+    } else if (playerChoice === "paper" && computerChoice === "rock") {
+        ++ playerScore
+        return ("You win - paper beats rock!")
+    } else if (playerChoice === "paper" && computerChoice === "paper") {
+        return ("Tie!")
+    } else if (playerChoice === "paper" && computerChoice === "scissors") {
+        ++ compScore
+        return ("You loose - scissors beats paper")
     }
 }
 
