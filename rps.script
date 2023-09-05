@@ -48,6 +48,8 @@ function playRound() {
 let playerScore = 0;
 let compScore = 0;
 
+// play a best-of-five round game. return message who is the winner.
+
 function game() {
     console.log(playRound());
     console.log(playRound());
