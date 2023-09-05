@@ -8,7 +8,6 @@ function getComputerChoice() {
 
 // play round of game. prompt user to make a selction of rock/paper/scissor and record as new variable. input must be one case insensitive
 
-
 function playRound() {
     let playerChoice = prompt("Enter rock, paper, or scissors!").toLowerCase();
     let computerChoice = getComputerChoice(); 
